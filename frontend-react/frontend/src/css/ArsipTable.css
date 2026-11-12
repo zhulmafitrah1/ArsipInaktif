@@ -1,0 +1,45 @@
+.table-container {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+}
+
+.badge.red {
+  background-color: #dc3545;
+}
+
+.badge.green {
+  background-color: #198754;
+}
+
+.badge.orange {
+  background-color: #fd7e14;
+}
+
+.badge.blue {
+  background-color: #0dcaf0;
+}

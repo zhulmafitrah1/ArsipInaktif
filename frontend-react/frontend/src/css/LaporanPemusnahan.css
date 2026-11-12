@@ -1,0 +1,195 @@
+/* LaporanPemusnahan.css */
+
+.lp-page {
+  padding: 1.5rem;
+  background: #f8f8f6;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.lp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+.lp-header-left { display: flex; align-items: center; gap: 14px; }
+.lp-header-icon {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: #FCEBEB;
+  display: flex; align-items: center; justify-content: center;
+}
+.lp-header-icon svg { width: 20px; height: 20px; stroke: #A32D2D; }
+.lp-title { font-size: 17px; font-weight: 600; color: #1a1a1a; margin: 0; }
+.lp-subtitle { font-size: 13px; color: #888; margin: 2px 0 0; }
+
+/* Download Button */
+.lp-btn-download {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 13px; font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #A32D2D;
+  background: #FCEBEB;
+  color: #A32D2D;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.lp-btn-download:hover { background: #F7C1C1; }
+.lp-btn-download svg { width: 14px; height: 14px; stroke: #A32D2D; }
+
+/* Stat Cards */
+.lp-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+.lp-stat-card {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: #fff;
+  border: 0.5px solid #e8e8e4;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+.lp-stat-icon {
+  width: 36px; height: 36px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.lp-stat-icon svg { width: 16px; height: 16px; }
+.lp-icon-red { background: #FCEBEB; } .lp-icon-red svg { stroke: #A32D2D; }
+.lp-icon-blue { background: #E6F1FB; } .lp-icon-blue svg { stroke: #185FA5; }
+.lp-icon-amber { background: #FAEEDA; } .lp-icon-amber svg { stroke: #854F0B; }
+.lp-icon-teal { background: #E1F5EE; } .lp-icon-teal svg { stroke: #0F6E56; }
+.lp-stat-label { font-size: 12px; color: #888; margin: 0 0 4px; }
+.lp-stat-num { font-size: 22px; font-weight: 600; color: #1a1a1a; line-height: 1; margin: 0 0 3px; }
+.lp-stat-num-sm { font-size: 16px !important; }
+.lp-stat-desc { font-size: 11px; color: #aaa; margin: 0; }
+
+/* Charts */
+.lp-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+.lp-chart-card {
+  background: #fff;
+  border: 0.5px solid #e8e8e4;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+.lp-chart-title { font-size: 13px; font-weight: 600; color: #1a1a1a; margin: 0 0 3px; }
+.lp-chart-sub { font-size: 12px; color: #999; margin: 0 0 1rem; }
+
+/* Card + Table */
+.lp-card {
+  background: #fff;
+  border: 0.5px solid #e8e8e4;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.lp-card-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 0.5px solid #e8e8e4;
+}
+.lp-card-title { font-size: 14px; font-weight: 600; color: #1a1a1a; margin: 0; }
+.lp-badge-count {
+  font-size: 11px; font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #FCEBEB;
+  color: #A32D2D;
+}
+.lp-table-wrap { overflow-x: auto; }
+.lp-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.lp-table thead th {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 11px; font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 0.5px solid #e8e8e4;
+  background: #fafaf8;
+  white-space: nowrap;
+}
+.lp-table tbody td {
+  padding: 10px 14px;
+  border-bottom: 0.5px solid #f0f0ec;
+  color: #1a1a1a;
+  vertical-align: middle;
+}
+.lp-table tbody tr:last-child td { border-bottom: none; }
+.lp-table tbody tr:hover td { background: #fafaf8; }
+
+.lp-td-num { color: #bbb; font-size: 12px; }
+.lp-td-judul { font-weight: 500; max-width: 200px; }
+.lp-td-ket { color: #999; font-size: 12px; }
+
+/* Badges */
+.lp-badge-kode {
+  font-size: 11px; font-weight: 500; padding: 2px 8px;
+  border-radius: 4px; background: #E6F1FB; color: #185FA5;
+}
+.lp-badge-jenis {
+  font-size: 11px; padding: 2px 8px;
+  border-radius: 4px; background: #F1EFE8; color: #5F5E5A;
+}
+.lp-badge-umur {
+  font-size: 11px; font-weight: 500; padding: 2px 8px;
+  border-radius: 4px; background: #FAEEDA; color: #854F0B;
+}
+.lp-badge-status {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 11px; font-weight: 500; padding: 3px 9px;
+  border-radius: 20px; background: #FCEBEB; color: #A32D2D;
+}
+.lp-status-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: #E24B4A; flex-shrink: 0;
+}
+
+/* PDF Button */
+.lp-btn-pdf {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; padding: 4px 10px;
+  border-radius: 6px;
+  border: 0.5px solid #ddd;
+  background: #fff;
+  color: #444;
+  cursor: pointer;
+}
+.lp-btn-pdf:hover { background: #f5f5f5; }
+.lp-btn-pdf svg { width: 12px; height: 12px; stroke: #888; }
+.lp-no-file { font-size: 12px; color: #bbb; }
+
+/* Card Footer */
+.lp-card-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.875rem 1.25rem;
+  border-top: 0.5px solid #e8e8e4;
+  background: #fafaf8;
+}
+.lp-footer-info { font-size: 13px; color: #888; }
+
+/* Empty State */
+.lp-empty {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 3rem 1.5rem; text-align: center;
+}
+.lp-empty-icon {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: #f0f0ec;
+  display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;
+}
+.lp-empty-icon svg { width: 24px; height: 24px; stroke: #bbb; }
+.lp-empty-title { font-size: 15px; font-weight: 600; color: #444; margin: 0 0 6px; }
+.lp-empty-desc { font-size: 13px; color: #999; max-width: 320px; line-height: 1.6; }
+
